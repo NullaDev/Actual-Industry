@@ -1,4 +1,4 @@
-package cn.nulladev.actualindustry.item;
+package cn.nulladev.actualindustry.api.item;
 
 public class AISimpleItem extends AIItemBase {
 

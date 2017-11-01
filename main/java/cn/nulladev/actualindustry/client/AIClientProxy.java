@@ -1,5 +1,7 @@
 package cn.nulladev.actualindustry.client;
 
+import org.lwjgl.opengl.Display;
+
 import cn.nulladev.actualindustry.core.AICommonProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -9,7 +11,7 @@ public class AIClientProxy extends AICommonProxy{
 	
 	@Override
 	public void preInit(FMLPreInitializationEvent event) {
-		//Display.setTitle("Minceraft 1.7.10");
+		Display.setTitle("Minceraft 1.12.2");
 	}
 	
 	@Override

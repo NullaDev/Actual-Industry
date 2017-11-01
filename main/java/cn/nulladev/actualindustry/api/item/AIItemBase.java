@@ -1,4 +1,4 @@
-package cn.nulladev.actualindustry.item;
+package cn.nulladev.actualindustry.api.item;
 
 import cn.nulladev.actualindustry.core.ModItems;
 import cn.nulladev.actualindustry.core.ActualIndustry;
