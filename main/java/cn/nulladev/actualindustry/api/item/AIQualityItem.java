@@ -13,9 +13,14 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+/**
+ * Items which have quality parameter.
+ * A stack with quality will be ignored by StackUtils unless its item instanceof AIQualityItem.
+ * @author Chitose
+ */
 public class AIQualityItem extends AIItemBase {
 	
-	private final double MAX_QUALITY;
+	private final double MAX_QUALITY;	//usually 1.0D
 
 	public AIQualityItem(String name, double maxQuality) {
 		super(name);

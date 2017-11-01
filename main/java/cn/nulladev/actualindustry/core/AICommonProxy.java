@@ -4,6 +4,9 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
+/**
+ * @author Chitose
+ */
 public class AICommonProxy {
 	
 	public void preInit(FMLPreInitializationEvent event) {}

@@ -8,6 +8,9 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
+/**
+ * @author Chitose
+ */
 @Mod(modid = ActualIndustry.MODID, name = ActualIndustry.MODNAME, version = ActualIndustry.VERSION )
 public class ActualIndustry {
 

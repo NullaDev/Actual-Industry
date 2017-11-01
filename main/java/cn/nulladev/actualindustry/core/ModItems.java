@@ -7,6 +7,9 @@ import cn.nulladev.actualindustry.api.item.AIQualityItem;
 import cn.nulladev.actualindustry.api.item.AISimpleItem;
 import net.minecraft.item.Item;
 
+/**
+ * @author Chitose
+ */
 public class ModItems {
 	
 	public static final List<Item> ITEMS = new ArrayList<Item>();

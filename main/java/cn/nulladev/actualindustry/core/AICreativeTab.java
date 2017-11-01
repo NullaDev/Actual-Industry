@@ -4,6 +4,9 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 
+/**
+ * @author Chitose
+ */
 public class AICreativeTab extends CreativeTabs {
 
 	public AICreativeTab() {

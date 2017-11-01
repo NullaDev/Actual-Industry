@@ -4,6 +4,9 @@ import cn.nulladev.actualindustry.core.ModItems;
 import cn.nulladev.actualindustry.core.ActualIndustry;
 import net.minecraft.item.Item;
 
+/**
+ * @author Chitose
+ */
 public abstract class AIItemBase extends Item {
 	
 	public AIItemBase(String name) {

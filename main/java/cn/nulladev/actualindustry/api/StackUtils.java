@@ -4,6 +4,9 @@ import cn.nulladev.actualindustry.api.item.AIQualityItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 
+/**
+ * @author Chitose
+ */
 public class StackUtils {
 	
 	public static final String TAG_NAME = "quality";
@@ -42,6 +45,5 @@ public class StackUtils {
 			getNBT(stack).setDouble(TAG_NAME, quality);
 		}
 	}
-
 
 }
