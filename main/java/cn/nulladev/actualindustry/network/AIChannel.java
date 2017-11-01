@@ -66,7 +66,6 @@ public class AIChannel {
 		}
 	}
 	
-	/** 客户端封包处理 */
 	@SubscribeEvent
 	public void onClientPacket(ClientCustomPacketEvent event) {
 		EntityPlayer player = Minecraft.getMinecraft().player;
@@ -74,8 +73,8 @@ public class AIChannel {
 		PacketBuffer buffer = new PacketBuffer(event.getPacket().payload());
 		try {
 			switch (buffer.readInt()){
-				default:
-					//do nothing
+			default:
+				//do nothing
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
