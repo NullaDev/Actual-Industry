@@ -35,7 +35,7 @@ public class AIChannel {
 		Channel.register(this);
 	}
 	
-	public FMLProxyPacket createSimpleRecipePacket(AISimpleRecipe recipe) {
+	public static FMLProxyPacket createSimpleRecipePacket(AISimpleRecipe recipe) {
 		PacketBuffer buffer = new PacketBuffer(Unpooled.buffer());
 		FMLProxyPacket packet = null;
 		try {
@@ -66,6 +66,7 @@ public class AIChannel {
 		}
 	}
 	
+	/** 客户端封包处理 */
 	@SubscribeEvent
 	public void onClientPacket(ClientCustomPacketEvent event) {
 		EntityPlayer player = Minecraft.getMinecraft().player;
