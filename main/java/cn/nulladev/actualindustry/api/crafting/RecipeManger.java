@@ -1,7 +1,9 @@
 package cn.nulladev.actualindustry.api.crafting;
 
+import cn.nulladev.actualindustry.api.StackUtils;
 import cn.nulladev.actualindustry.core.AIRecipes;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagDouble;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraftforge.fml.relauncher.Side;
@@ -54,6 +56,23 @@ public class RecipeManger {
 	public void addExp(EntityPlayer crafter, AISimpleRecipe recipe, double exp) {
 		exp = Math.min(exp + getExp(crafter, recipe), MAX_EXP);
 		setExp(crafter, recipe, exp);
+	}
+	
+	@SideOnly(Side.SERVER)
+	public boolean craft(EntityPlayer crafter, AISimpleRecipe recipe) {
+		// get player's inventory
+		// then try to delete items
+		// then give player product
+		// then return true if succeed
+		return false;
+	}
+	
+	public ItemStack getRecipeResult(AISimpleRecipe recipe, double exp, double maxQuality) {
+		ItemStack result = recipe.getProduct(exp);
+		if (StackUtils.getQuality(result) > maxQuality) {
+			StackUtils.setQuality(result, maxQuality);
+		}
+		return result;
 	}
 
 }

@@ -40,10 +40,12 @@ public class StackUtils {
 		}
 	}
 	
-	public static void setQuality(ItemStack stack, double quality) {
+	public static ItemStack setQuality(ItemStack stack, double quality) {
+		quality = Math.max(quality, 0);
 		if (stack.getItem() instanceof AIQualityItem) {
 			getNBT(stack).setDouble(TAG_NAME, quality);
 		}
+		return stack;
 	}
 
 }
