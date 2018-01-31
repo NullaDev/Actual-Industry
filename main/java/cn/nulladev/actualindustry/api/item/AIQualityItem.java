@@ -20,17 +20,13 @@ import net.minecraftforge.fml.relauncher.SideOnly;
  */
 public class AIQualityItem extends AIItemBase {
 	
-	private final double MAX_QUALITY;	//usually 1.0D
+	public static final double MAX_QUALITY = 1.0D;
 
-	public AIQualityItem(String name, double maxQuality) {
+	public AIQualityItem(String name) {
 		super(name);
-		this.MAX_QUALITY = maxQuality;
 		this.setMaxStackSize(1);
 	}
 	
-	public AIQualityItem(String name) {
-		this(name, 1.0D);
-	}
 	
     @Override
     @SideOnly(Side.CLIENT)
@@ -39,10 +35,6 @@ public class AIQualityItem extends AIItemBase {
         ItemStack stack2 = StackUtils.createStackWithQuality(this, MAX_QUALITY);
         items.add(stack1);
         items.add(stack2);
-    }
-    
-    public double getMaxQuality() {
-    	return MAX_QUALITY;
     }
     
     @Override

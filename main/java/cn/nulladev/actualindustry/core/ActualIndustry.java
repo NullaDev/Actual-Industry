@@ -1,6 +1,8 @@
 package cn.nulladev.actualindustry.core;
 
+import cn.nulladev.actualindustry.task.ListHandler;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -33,6 +35,7 @@ public class ActualIndustry {
     @EventHandler
     public void Init(FMLInitializationEvent event) {
     	proxy.init(event);
+		MinecraftForge.EVENT_BUS.register(new ListHandler());
     }
     
     @EventHandler

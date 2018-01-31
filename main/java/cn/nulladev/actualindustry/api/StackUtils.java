@@ -23,7 +23,7 @@ public class StackUtils {
 		
 	public static ItemStack createStackWithQuality(AIQualityItem item, double quality) {
 		quality = Math.max(quality, 0);
-		quality = Math.min(quality, item.getMaxQuality());
+		quality = Math.min(quality, AIQualityItem.MAX_QUALITY);
 		ItemStack stack = new ItemStack(item);
 		setQuality(stack, quality);
 		return stack;
