@@ -27,7 +27,6 @@ public class AIQualityItem extends AIItemBase {
 		this.setMaxStackSize(1);
 	}
 	
-	
     @Override
     @SideOnly(Side.CLIENT)
 	public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> items) {
