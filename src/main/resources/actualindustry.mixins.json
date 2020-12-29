@@ -1,11 +1,11 @@
 {
   "required": true,
   "package": "cn.nulladev.actualindustry.mixin",
-  "compatibilityLevel": "JAVA_8",
+  "compatibilityLevel": "JAVA_11",
   "mixins": [
   ],
   "client": [
-    "ExampleMixin"
+    "AIMixin"
   ],
   "injectors": {
     "defaultRequire": 1

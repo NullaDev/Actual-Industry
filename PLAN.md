@@ -3,7 +3,7 @@
 真实工业（Actual Industry）是NullaDev开发组开发的以模块化零件机器为主题的一个科技向Minecraft Mod。
 <br>
 <br>
-使用Fabric API。
+使用Fabric Mod Loader。
 
 ## 索引
 

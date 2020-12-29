@@ -6,14 +6,14 @@
   "name": "Actual Industry",
   "description": "This is a Minecraft mod about actual industry on the world! ",
   "authors": [
-    "Sealed L"
+    "SealedL"
   ],
   "contact": {
     "homepage": "https://nulladev.cn/",
     "sources": "https://github.com/NullaDev/Actual-Industry"
   },
 
-  "license": "GPL-3.0",
+  "license": "CC BY-NC-SA 4.0",
   "icon": "assets/actualindustry/icon.png",
 
   "environment": "*",
@@ -27,11 +27,11 @@
   ],
 
   "depends": {
-    "fabricloader": ">=0.7.2",
+    "fabricloader": ">=0.7.4",
     "fabric": "*",
-    "minecraft": "1.15.x"
+    "minecraft": "1.16.x"
   },
   "suggests": {
-    "flamingo": "*"
+    "another-mod": "*"
   }
 }
