@@ -1,8 +1,10 @@
 {
   "required": true,
+  "minVersion": "0.8",
   "package": "cn.nulladev.actualindustry.mixin",
   "compatibilityLevel": "JAVA_11",
   "mixins": [
+    "AIMixin"
   ],
   "client": [
     "AIMixin"
